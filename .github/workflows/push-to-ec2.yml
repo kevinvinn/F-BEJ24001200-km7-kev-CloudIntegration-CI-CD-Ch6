@@ -30,4 +30,4 @@ jobs:
           REMOTE_HOST: ${{ secrets.HOST_DNS }}
           REMOTE_USER: ${{ secrets.USERNAME }}
           TARGET: "/home/ubuntu/F-BEJ24001200-km7-kev-CloudIntegration-CI-CD-Ch6"
-args: "--rsync-path='sudo rsync' --exclude '.git' --exclude 'node_modules' --exclude '.github'"
+          args: "--exclude '.git' --exclude 'node_modules'"
