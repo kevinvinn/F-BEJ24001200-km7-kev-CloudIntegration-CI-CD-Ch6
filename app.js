@@ -16,5 +16,5 @@ app.get("/", (req, res) => {
 });
 
 app.listen(PORT, () => {
-  console.log(`Aku tresno ${PORT} uhuy`);
+  console.log(`Aku tresno ${PORT} uhuy uhuy`);
 });
