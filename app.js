@@ -1,7 +1,9 @@
-require("dotenv").config();
+if (process.env.NODE_ENV !== "production") {
+  require("dotenv").config();
+}
+const PORT = process.env.PORT || 3000;
 const express = require("express");
 const app = express();
-const PORT = 3000;
 const routes = require("./routes");
 
 app.use(express.json());
@@ -14,5 +16,5 @@ app.get("/", (req, res) => {
 });
 
 app.listen(PORT, () => {
-  console.log(`aku cinta ${PORT}`);
+  console.log(`Aku tresno ${PORT}`);
 });
