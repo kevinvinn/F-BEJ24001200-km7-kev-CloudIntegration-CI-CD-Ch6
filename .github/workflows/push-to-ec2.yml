@@ -29,4 +29,9 @@ jobs:
           SSH_PRIVATE_KEY: ${{ secrets.EC2_SSH_KEY }}
           REMOTE_HOST: ${{ secrets.HOST_DNS }}
           REMOTE_USER: ${{ secrets.USERNAME }}
+<<<<<<< HEAD
           TARGET: ${{ secrets.TARGET_DIR }}
+=======
+          TARGET: "/home/ubuntu/F-BEJ24001200-km7-kev-CloudIntegration-CI-CD-Ch6"
+          args: "--exclude '.git' --exclude 'node_modules'"
+>>>>>>> de96a903152857928be5ba876b4145ee91dc40d2

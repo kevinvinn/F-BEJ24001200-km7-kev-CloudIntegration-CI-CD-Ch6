@@ -12,9 +12,17 @@ app.use(express.urlencoded({ extended: true }));
 app.use("/", routes);
 
 app.get("/", (req, res) => {
+<<<<<<< HEAD
   res.send("aku di sini uhuy");
 });
 
 app.listen(PORT, () => {
   console.log(`Aku tresno ${PORT}`);
+=======
+  res.send("aku di sini");
+});
+
+app.listen(PORT, () => {
+  console.log(`Aku tresno ${PORT} uhuy ahay 8`);
+>>>>>>> de96a903152857928be5ba876b4145ee91dc40d2
 });
